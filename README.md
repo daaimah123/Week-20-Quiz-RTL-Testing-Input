@@ -56,5 +56,4 @@ Notice that the FocusInput component test directory has a new directory called `
 This file is a fully rendered version of the component with html elements and other details. Snapshot tests are a very useful tool whenever you want to make sure your UI does not change unexpectedly. A typical snapshot test case renders a UI component, takes a snapshot, then compares it to a reference snapshot file stored alongside the test. It helps you determine whether the output continues to behave as expected or not. This is a very useful testing method as there are higher chances that something will break as you revisit your code to make updates over time.
 
 ##### How do Snapshots Work?
-- auto rendered once tests are ran
 In your `__tests__` directory, create a `__snapshots__` directory. When you are testing with the intention to populate a new snapshot (or update an existing snapshot file), run `npm test -- -u`. If there is no existing snapshot for that test, it will populate a new file in the `__snapshots__` directory. If snapshot test files already exist, this command will update the snapshot content if there were any recent changes made to its respective component.
