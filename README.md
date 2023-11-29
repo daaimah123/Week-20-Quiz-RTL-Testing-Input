@@ -26,7 +26,7 @@ npm test -- -u
 - Before setting up your test suites, you should use `afterEach(cleanup)` (after imports) in order to unmount any React trees that were mounted with render
 
 ### Testing a Focused Element
-Create a two tests for the FocusInput component.
+Create two tests for the FocusInput component.
 
 - The first test should handle matching snapshot content. 
   - Set a rendered `ChangenInput` to a deconstructed `container`. 
