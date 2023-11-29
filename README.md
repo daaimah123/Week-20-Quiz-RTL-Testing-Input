@@ -19,7 +19,7 @@ Before setting up your test suites, you should use `afterEach(cleanup)` (after i
 
 
 ### Testing a Focused Element
-Create a two test assertions for the FocusInput component.
+Create a two tests for the FocusInput component.
 
 The first test should handle matching snapshot content. Set a rendered `ChangenInput` to a deconstructed `container`. Verify that the first instance of the component in the container matches the populated snapshot.
 
@@ -27,7 +27,7 @@ The second test should emulate properly focusing input following a button trigge
 
 
 ### Testing for an Input Change
-Create a single test assertion for the ChangeInput component. The test should handle displaying the correct greeting. Set a rendered `ChangenInput` to a deconstructed `getByLabelText` and `getByTestId`. Set `input` variable to label text "user-name". Set `greeting` variable to ID "change-input-greeting". Assert that expected input value should be empty. Assert that expected greeting text should be "Welcome, Anonymous User!" Simulate a change input event where text value is changed. Verify that the changed input value text is as expected. Verify that the greeting text has replaced "Anonymous User" with the changed input value.
+Create a single test for the ChangeInput component. The test should handle displaying the correct greeting. Set a rendered `ChangenInput` to a deconstructed `getByLabelText` and `getByTestId`. Set `input` variable to label text "user-name". Set `greeting` variable to ID "change-input-greeting". Assert that expected input value should be empty. Assert that expected greeting text should be "Welcome, Anonymous User!" Simulate a change input event where text value is changed. Verify that the changed input value text is as expected. Verify that the greeting text has replaced "Anonymous User" with the changed input value.
 
 
 ### Snapshot Tests
